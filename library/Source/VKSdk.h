@@ -49,6 +49,8 @@ typedef NS_OPTIONS(NSUInteger, VKAuthorizationOptions) {
     VKAuthorizationOptionsUnlimitedToken = 1 << 0,
     ///Pass this option to disable usage of SFSafariViewController
     VKAuthorizationOptionsDisableSafariController = 1 << 1,
+    ///Pass this option to enable usage of authorization providers
+    VKAuthorizationOptionsEnableProviders = 1 << 2,
 };
 
 /**
@@ -278,9 +280,11 @@ Initialize SDK with responder for global SDK events.
 */
 + (VKAccessToken *)accessToken;
 
-/*
- Settings access token
+/**
+ Set your own access token
+ @param token token token token
 */
+
 + (void)setAccessToken:(VKAccessToken *)token;
 
 ///-------------------------------
