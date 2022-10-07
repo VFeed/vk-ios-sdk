@@ -73,7 +73,7 @@ CGFloat kCaptchaViewHeight = 138;
         _captchaTextField.placeholder = NSLocalizedString(@"Enter captcha text", @"");
         _captchaTextField.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin;
         [self addSubview:_captchaTextField];
-        VKHTTPOperation *operation = [[VKHTTPOperation alloc] initWithURLRequest:[[VKHTTPClient getClient] requestWithMethod:@"GET" path:_error.captchaImg parameters:nil secure:NO]];
+        VKHTTPOperation *operation = [[VKHTTPOperation alloc] initWithURLRequest:[[VKHTTPClient client] requestWithMethod:@"GET" path:_error.captchaImg parameters:nil secure:NO]];
         
         __weak typeof(self) wself = self;
         [operation setCompletionBlockWithSuccess:^(VKHTTPOperation *operation, id responseObject) {
@@ -82,7 +82,7 @@ CGFloat kCaptchaViewHeight = 138;
         }                                failure:^(VKHTTPOperation *operation, NSError *error) {
         }];
         
-        [[VKHTTPClient getClient] enqueueOperation:operation];
+        [[VKHTTPClient client] enqueueOperation:operation];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceDidRotate:) name:UIDeviceOrientationDidChangeNotification object:nil];
         [self deviceDidRotate:nil];
     }
