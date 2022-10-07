@@ -84,6 +84,18 @@ NSString *VK_AUTHORIZE_URL_STRING = @"vkauthorize://authorize";
 
 + (void)presentThisController:(VKAuthorizeController *)controller {
     VKNavigationController *navigation = [[VKNavigationController alloc] initWithRootViewController:controller];
+    if (@available(iOS 15.0, *)) {
+        UINavigationBarAppearance *appearance = UINavigationBarAppearance.new;
+        [appearance configureWithOpaqueBackground];
+        appearance.backgroundColor = [UIColor colorWithRed:61/255.f green:120/255.f blue:191/255.f alpha:1];
+        appearance.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+        appearance.shadowColor = UIColor.clearColor;
+        navigation.navigationBar.standardAppearance = appearance;
+        navigation.navigationBar.tintColor = [UIColor whiteColor];
+        navigation.navigationBar.scrollEdgeAppearance = appearance;
+        navigation.navigationBar.compactScrollEdgeAppearance = appearance;
+        navigation.navigationBar.translucent = NO;
+    }
 
     if ([VKUtil isOperatingSystemAtLeastIOS7]) {
         navigation.navigationBar.barTintColor = VK_COLOR;
