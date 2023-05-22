@@ -279,20 +279,7 @@ NSString *VK_AUTHORIZE_URL_STRING = @"vkauthorize://authorize";
 #pragma mark Cancelation and dismiss
 
 - (void)cancelAuthorization:(id)sender {
-    [self dismissWithCompletion:^{
-        if (!self->_validationError) {
-            //Silent cancel
-            [VKSdk processOpenInternalURL:[NSURL URLWithString:@"#"] validation:NO];
-        } else {
-            [self->_validationError.request cancel];
-        }
-    }];
-    if (_validationError) {
-        NSError *error = [NSError errorWithVkError:[VKError errorWithCode:VK_AUTHORIZE_CONTROLLER_CANCEL]];
-        if (_validationError.request.errorBlock) {
-            _validationError.request.errorBlock(error);
-        }
-    }
+    [self dismissWithCompletion:^{}];
 }
 
 - (void)dismissWithCompletion:(void (^)(void))completion {
