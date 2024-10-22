@@ -39,6 +39,7 @@
 #import <VKSdkFramework/VKShareDialogController.h>
 #import <VKSdkFramework/VKActivity.h>
 #import <VKSdkFramework/VKAuthorizationResult.h>
+#import <VKSdkFramework/VKHTTPClientProtocol.h>
 /**
  Options used for authorization.
  */
