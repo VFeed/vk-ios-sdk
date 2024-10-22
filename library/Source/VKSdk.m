@@ -39,7 +39,6 @@
 #import "VKSdk.h"
 #import "VKAuthorizeController.h"
 #import "VKRequestsScheduler.h"
-#import "VKHTTPClient.h"
 
 @interface VKWeakDelegate : NSProxy <VKSdkDelegate>
 @property(nonatomic, weak) id <VKSdkDelegate> weakTarget;
