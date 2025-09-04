@@ -27,7 +27,7 @@ Builds requests for API.wall part
 */
 @interface VKApiWall : VKApiBase
 /**
-https://vk.com/dev/wall.post
+https://vk.ru/dev/wall.post
 @param params Use parameters from description with VK_API prefix
 @return Request for execution
 */

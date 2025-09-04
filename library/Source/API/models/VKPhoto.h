@@ -25,7 +25,7 @@
 #import "VKPhotoSize.h"
 
 /**
-Photo type of VK API. See descriptions here https://vk.com/dev/photo
+Photo type of VK API. See descriptions here https://vk.ru/dev/photo
 */
 @interface VKPhoto : VKApiObject
 @property(nonatomic, strong) NSNumber *id;

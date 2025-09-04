@@ -33,53 +33,53 @@ Returns basic information about current user
 - (VKRequest *)get;
 
 /**
-https://vk.com/dev/users.get
+https://vk.ru/dev/users.get
 @param params use parameters from description with VK_API prefix, e.g. VK_API_USER_IDS, VK_API_FIELDS, VK_API_NAME_CASE
 @return Request for load
 */
 - (VKRequest *)get:(NSDictionary *)params;
 
 /**
-https://vk.com/dev/users.search
+https://vk.ru/dev/users.search
 @param params use parameters from description with VK_API prefix, e.g. VK_API_Q, VK_API_CITY, VK_API_COUNTRY, etc.
 @return Request for load
 */
 - (VKRequest *)search:(NSDictionary *)params;
 
 /**
-https://vk.com/dev/users.isAppUser
+https://vk.ru/dev/users.isAppUser
 @return Request for load
 */
 - (VKRequest *)isAppUser;
 
 /**
-https://vk.com/dev/users.isAppUser
+https://vk.ru/dev/users.isAppUser
 @param userID ID of user to check
 @return Request for load
 */
 - (VKRequest *)isAppUser:(NSInteger)userID;
 
 /**
-https://vk.com/dev/users.getSubscriptions
+https://vk.ru/dev/users.getSubscriptions
 @return Request for load
 */
 - (VKRequest *)getSubscriptions;
 
 /**
-https://vk.com/dev/users.getSubscriptions
+https://vk.ru/dev/users.getSubscriptions
 @param params use parameters from description with VK_API prefix, e.g. VK_API_USER_ID, VK_API_EXTENDED, etc.
 @return Request for load
 */
 - (VKRequest *)getSubscriptions:(NSDictionary *)params;
 
 /**
-https://vk.com/dev/users.getFollowers
+https://vk.ru/dev/users.getFollowers
 @return Request for load
 */
 - (VKRequest *)getFollowers;
 
 /**
-https://vk.com/dev/users.getFollowers
+https://vk.ru/dev/users.getFollowers
 @param params use parameters from description with VK_API prefix, e.g. VK_API_USER_ID, VK_API_OFFSET, etc.
 @return Request for load
 */

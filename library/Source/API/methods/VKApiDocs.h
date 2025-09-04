@@ -29,7 +29,7 @@
 
 /**
  *  Returns detailed information about user or community documents.
- *  https://vk.com/dev/docs.get
+ *  https://vk.ru/dev/docs.get
  *
  *  @return Request to load
  */
@@ -37,7 +37,7 @@
 
 /**
  *   Returns detailed information about user or community documents.
- *   https://vk.com/dev/docs.get
+ *   https://vk.ru/dev/docs.get
  *
  *  @param count Number of documents to return.
  *
@@ -47,7 +47,7 @@
 
 /**
  *  Returns detailed information about user or community documents.
- *  https://vk.com/dev/docs.get
+ *  https://vk.ru/dev/docs.get
  *
  *  @param count  Number of documents to return. By default, all documents.
  *  @param offset Offset needed to return a specific subset of documents.
@@ -58,7 +58,7 @@
 
 /**
  *  Returns detailed information about user or community documents.
- *  https://vk.com/dev/docs.get
+ *  https://vk.ru/dev/docs.get
  *
  *  @param count   Number of documents to return. By default, all documents.
  *  @param offset  Offset needed to return a specific subset of documents.
@@ -70,7 +70,7 @@
 
 /**
  *  Returns information about documents by their IDs.
- *  https://vk.com/dev/docs.getById
+ *  https://vk.ru/dev/docs.getById
  *  @param IDs Document IDs.
  *
  *  @return Request to load
@@ -79,7 +79,7 @@
 
 /**
  *  Returns the server address for document upload.
- *  https://vk.com/dev/docs.getUploadServer
+ *  https://vk.ru/dev/docs.getUploadServer
  *
  *  @return Request to load
  */
@@ -87,7 +87,7 @@
 
 /**
  *  Returns the server address for document upload.
- *  https://vk.com/dev/docs.getUploadServer
+ *  https://vk.ru/dev/docs.getUploadServer
  *
  *  @param group_id ID of the community the document will be uploaded to.
  *
@@ -97,7 +97,7 @@
 
 /**
  *  Returns the server address for document upload onto a user's or community's wall.
- *  https://vk.com/dev/docs.getWallUploadServer
+ *  https://vk.ru/dev/docs.getWallUploadServer
  *
  *  @return Request to load
  */
@@ -105,7 +105,7 @@
 
 /**
  *  Returns the server address for document upload onto a user's or community's wall.
- *  https://vk.com/dev/docs.getWallUploadServer
+ *  https://vk.ru/dev/docs.getWallUploadServer
  *
  *  @param group_id ID of the community the document will be uploaded to.
  *
@@ -115,7 +115,7 @@
 
 /**
  *  Saves a document after uploading it to a server.
- *  https://vk.com/dev/docs.save
+ *  https://vk.ru/dev/docs.save
  *
  *  @param file This parameter is returned when the file is uploaded to the server.
  *
@@ -125,7 +125,7 @@
 
 /**
  *  Saves a document after uploading it to a server.
- *  https://vk.com/dev/docs.save
+ *  https://vk.ru/dev/docs.save
  *
  *  @param file  This parameter is returned when the file is uploaded to the server.
  *  @param title Document title.
@@ -136,7 +136,7 @@
 
 /**
  *  Saves a document after uploading it to a server.
- *  https://vk.com/dev/docs.save
+ *  https://vk.ru/dev/docs.save
  *
  *  @param file  This parameter is returned when the file is uploaded to the server.
  *  @param title Document title
@@ -148,7 +148,7 @@
 
 /**
  *  Deletes a user or community document.
- *  https://vk.com/dev/docs.delete
+ *  https://vk.ru/dev/docs.delete
  *
  *  @param ownerID ID of the user or community that owns the document. Use a negative value to designate a community ID.
  *  @param docID   Document ID.
@@ -159,7 +159,7 @@
 
 /**
  *  Copies a document to a user's or community's document list.
- *  https://vk.com/dev/docs.add
+ *  https://vk.ru/dev/docs.add
  *
  *  @param ownerID   ID of the user or community that owns the document. Use a negative value to designate a community ID.
  *  @param docID     Document ID.
@@ -170,7 +170,7 @@
 
 /**
  *  Copies a document to a user's or community's document list.
- *  https://vk.com/dev/docs.add
+ *  https://vk.ru/dev/docs.add
  *
  *  @param ownerID   ID of the user or community that owns the document. Use a negative value to designate a community ID.
  *  @param docID     Document ID.
@@ -182,7 +182,7 @@
 
 /**
  *  Returns results of search
- *  https://vk.com/dev/docs.search
+ *  https://vk.ru/dev/docs.search
  *
  *  @param query  Search query
  *
@@ -192,7 +192,7 @@
 
 /**
  *  Returns results of search
- *  https://vk.com/dev/docs.search
+ *  https://vk.ru/dev/docs.search
  *
  *  @param query  Search query
  *  @param count  Number of documents to return.
@@ -203,7 +203,7 @@
 
 /**
  *  Returns results of search
- *  https://vk.com/dev/docs.search
+ *  https://vk.ru/dev/docs.search
  *
  *  @param query  Search query
  *  @param count  Number of documents to return.
@@ -215,7 +215,7 @@
 
 /**
  *  Edits a current user's document.
- *  https://vk.com/dev/docs.edit
+ *  https://vk.ru/dev/docs.edit
  *
  *  @param docID  Document ID.
  *  @param title  New document title
@@ -226,7 +226,7 @@
 
 /**
  *  Edits a current user's document.
- *  https://vk.com/dev/docs.edit
+ *  https://vk.ru/dev/docs.edit
  *
  *  @param docID  Document ID.
  *  @param title  New document title
@@ -238,7 +238,7 @@
 
 /**
  *  Edits a user's or community's document.
- *  https://vk.com/dev/docs.edit
+ *  https://vk.ru/dev/docs.edit
  *
  *  @param ownerID  ID of the user or community that owns the document. Use a negative value to designate a community ID.
  *  @param docID    Document ID.
@@ -250,7 +250,7 @@
 
 /**
  *  Edits a user's or community's document.
- *  https://vk.com/dev/docs.edit
+ *  https://vk.ru/dev/docs.edit
  *
  *  @param ownerID  ID of the user or community that owns the document. Use a negative value to designate a community ID.
  *  @param docID    Document ID.

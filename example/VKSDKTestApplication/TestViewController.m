@@ -133,14 +133,14 @@ static NSString *const ALL_USER_FIELDS = @"id,first_name,last_name,sex,bdate,cit
         VKShareDialogController *shareDialog = [VKShareDialogController new];
         shareDialog.text = @"This post made with #vksdk #ios";
         shareDialog.vkImages = @[@"-10889156_348122347", @"7840938_319411365", @"-60479154_333497085"];
-        shareDialog.shareLink = [[VKShareLink alloc] initWithTitle:@"Super puper link, but nobody knows" link:[NSURL URLWithString:@"https://vk.com/dev/ios_sdk"]];
+        shareDialog.shareLink = [[VKShareLink alloc] initWithTitle:@"Super puper link, but nobody knows" link:[NSURL URLWithString:@"https://vk.ru/dev/ios_sdk"]];
         [shareDialog setCompletionHandler:^(VKShareDialogController *dialog, VKShareDialogControllerResult result) {
             [self dismissViewControllerAnimated:YES completion:nil];
         }];
         [self presentViewController:shareDialog animated:YES completion:nil];
     }
     else if ([label isEqualToString:TEST_ACTIVITY]) {
-        NSArray *items = @[[UIImage imageNamed:@"apple"], @"This post made with #vksdk activity #ios", [NSURL URLWithString:@"https://vk.com/dev/ios_sdk"]];
+        NSArray *items = @[[UIImage imageNamed:@"apple"], @"This post made with #vksdk activity #ios", [NSURL URLWithString:@"https://vk.ru/dev/ios_sdk"]];
         UIActivityViewController *activityViewController = [[UIActivityViewController alloc]
                 initWithActivityItems:items
                 applicationActivities:@[[VKActivity new]]];
@@ -205,7 +205,7 @@ static NSString *const ALL_USER_FIELDS = @"id,first_name,last_name,sex,bdate,cit
         [post executeWithResultBlock:^(VKResponse *postResponse) {
             NSLog(@"Result: %@", postResponse);
             NSNumber *postId = postResponse.json[@"post_id"];
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://vk.com/wall-60479154_%@", postId]]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://vk.ru/wall-60479154_%@", postId]]];
         } errorBlock:^(NSError *error) {
             NSLog(@"Error: %@", error);
         }];
@@ -231,7 +231,7 @@ static NSString *const ALL_USER_FIELDS = @"id,first_name,last_name,sex,bdate,cit
         [post executeWithResultBlock:^(VKResponse *response) {
             NSLog(@"Result: %@", response);
             NSNumber *postId = response.json[@"post_id"];
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://vk.com/wall-60479154_%@", postId]]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://vk.ru/wall-60479154_%@", postId]]];
         } errorBlock:^(NSError *error) {
             NSLog(@"Error: %@", error);
         }];
@@ -245,7 +245,7 @@ static NSString *const ALL_USER_FIELDS = @"id,first_name,last_name,sex,bdate,cit
     [request executeWithResultBlock:^(VKResponse *response) {
         NSLog(@"Result: %@", response);
         VKPhoto *photo = [(VKPhotoArray *) response.parsedModel objectAtIndex:0];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://vk.com/photo-60479154_%@", photo.id]]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://vk.ru/photo-60479154_%@", photo.id]]];
     } errorBlock:^(NSError *error) {
         NSLog(@"Error: %@", error);
     }];

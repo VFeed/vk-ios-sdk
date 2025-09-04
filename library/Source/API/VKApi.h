@@ -39,43 +39,43 @@ Provides access for API parts.
 */
 @interface VKApi : NSObject
 /**
-https://vk.com/dev/users
+https://vk.ru/dev/users
 Returns object for preparing requests to users part of API
 */
 + (VKApiUsers *)users;
 
 /**
-https://vk.com/dev/wall
+https://vk.ru/dev/wall
 Returns object for preparing requests to wall part of API
 */
 + (VKApiWall *)wall;
 
 /**
-https://vk.com/dev/photos
+https://vk.ru/dev/photos
 Returns object for preparing requests to photos part of API
 */
 + (VKApiPhotos *)photos;
 
 /**
-https://vk.com/dev/friends
+https://vk.ru/dev/friends
 Returns object for preparing requests to friends part of API
 */
 + (VKApiFriends *)friends;
 
 /**
-https://vk.com/dev/friends
+https://vk.ru/dev/friends
 Returns object for preparing requests to groups part of API
 */
 + (VKApiGroups *)groups;
 
 /**
-https://vk.com/dev/docs
+https://vk.ru/dev/docs
  Returns object for preparing requests to docs part of API
 */
 + (VKApiDocs *)docs;
 
 /**
- Create new request with parameters. See documentation for methods here https://vk.com/dev/methods
+ Create new request with parameters. See documentation for methods here https://vk.ru/dev/methods
 
  @param method API-method name, e.g. audio.get
  @param parameters method parameters
@@ -87,7 +87,7 @@ https://vk.com/dev/docs
                    andHttpMethod:(NSString *)httpMethod __deprecated;
 
 /**
- Create new request with parameters. See documentation for methods here https://vk.com/dev/methods
+ Create new request with parameters. See documentation for methods here https://vk.ru/dev/methods
  
  @param method API-method name, e.g. audio.get
  @param parameters method parameters

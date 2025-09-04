@@ -126,7 +126,7 @@
 @end
 
 /**
- User type of VK API. See descriptions here https://vk.com/dev/fields
+ User type of VK API. See descriptions here https://vk.ru/dev/fields
  */
 @interface VKUser : VKApiObject
 @property(nonatomic, strong) NSNumber *id;
