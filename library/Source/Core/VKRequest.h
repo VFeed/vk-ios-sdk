@@ -129,7 +129,7 @@ Creates and debug timings for VKRequest
 
 
 /**
- Creates new request with parameters. See documentation for methods here https://vk.com/dev/methods
+ Creates new request with parameters. See documentation for methods here https://vk.ru/dev/methods
  @param method API-method name, e.g. audio.get
  @param parameters method parameters
  @param httpMethod HTTP method for execution, e.g. GET, POST
@@ -141,7 +141,7 @@ Creates and debug timings for VKRequest
                     andHttpMethod:(NSString *)httpMethod __deprecated;
 
 /**
- Creates new request with parameters. See documentation for methods here https://vk.com/dev/methods
+ Creates new request with parameters. See documentation for methods here https://vk.ru/dev/methods
  @param method API-method name, e.g. audio.get
  @param parameters method parameters
  @return Complete request object for execute or configure method
@@ -151,7 +151,7 @@ Creates and debug timings for VKRequest
                     andParameters:(NSDictionary *)parameters __deprecated;
 
 /**
- Creates new request with parameters. See documentation for methods here https://vk.com/dev/methods
+ Creates new request with parameters. See documentation for methods here https://vk.ru/dev/methods
  @param method API-method name, e.g. audio.get
  @param parameters method parameters
  @param modelClass class for automatic parse
@@ -162,7 +162,7 @@ Creates and debug timings for VKRequest
                        modelClass:(Class)modelClass __deprecated;
 
 /**
- Creates new request with parameters. See documentation for methods here https://vk.com/dev/methods
+ Creates new request with parameters. See documentation for methods here https://vk.ru/dev/methods
  @param method API-method name, e.g. audio.get
  @param parameters method parameters
  @param httpMethod HTTP method for execution, e.g. GET, POST
@@ -176,7 +176,7 @@ Creates and debug timings for VKRequest
                      classOfModel:(Class)modelClass __deprecated;
 
 /**
- Creates new request with parameters. See documentation for methods here https://vk.com/dev/methods
+ Creates new request with parameters. See documentation for methods here https://vk.ru/dev/methods
  @param method API-method name, e.g. audio.get
  @param parameters method parameters
  @return Complete request object for execute or configure method
@@ -185,7 +185,7 @@ Creates and debug timings for VKRequest
                        parameters:(NSDictionary *)parameters;
 
 /**
- Creates new request with parameters. See documentation for methods here https://vk.com/dev/methods
+ Creates new request with parameters. See documentation for methods here https://vk.ru/dev/methods
  @param method API-method name, e.g. audio.get
  @param parameters method parameters
  @param modelClass class for automatic parse

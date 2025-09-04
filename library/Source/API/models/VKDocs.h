@@ -49,7 +49,7 @@
 @end
 
 /**
- Docs type of VK API. See descriptions here https://vk.com/dev/doc
+ Docs type of VK API. See descriptions here https://vk.ru/dev/doc
  */
 @interface VKDocs : VKApiObject
 @property(nonatomic, strong) NSNumber *id;

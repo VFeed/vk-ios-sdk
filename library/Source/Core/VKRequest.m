@@ -488,7 +488,7 @@ void vksdk_dispatch_on_main_queue_now(void(^block)(void)) {
 #pragma mark Sevice
 
 - (NSString *)generateSig:(OrderedDictionary *)params token:(VKAccessToken *)token {
-    //Read description here https://vk.com/dev/api_nohttps
+    //Read description here https://vk.ru/dev/api_nohttps
     //First of all, we need key-value pairs in order of request
     NSMutableArray *paramsArray = [NSMutableArray arrayWithCapacity:params.count];
     for (NSString *key in params) {

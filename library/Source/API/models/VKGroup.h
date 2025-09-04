@@ -108,7 +108,7 @@
 @end
 
 /**
- Group type of VK API. See descriptions here https://vk.com/dev/fields_groups
+ Group type of VK API. See descriptions here https://vk.ru/dev/fields_groups
  */
 @interface VKGroup : VKApiObject
 @property(nonatomic, strong) NSNumber *id;

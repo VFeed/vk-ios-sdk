@@ -136,7 +136,7 @@ NSString *VK_AUTHORIZE_URL_STRING = @"vkauthorize://authorize";
         params[@"display"] = ctx.displayType;
     }
     
-    return [NSURL URLWithString:[NSString stringWithFormat:@"%@?%@", ctx.authPrefix ?: @"https://oauth.vk.com/authorize", [VKUtil queryStringFromParams:params]]];
+    return [NSURL URLWithString:[NSString stringWithFormat:@"%@?%@", ctx.authPrefix ?: @"https://oauth.vk.ru/authorize", [VKUtil queryStringFromParams:params]]];
 }
 
 #pragma mark View prepare
@@ -177,6 +177,7 @@ NSString *VK_AUTHORIZE_URL_STRING = @"vkauthorize://authorize";
     _webView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     _webView.scrollView.bounces = NO;
     _webView.scrollView.clipsToBounds = NO;
+    _webView.customUserAgent = @"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148";
     [view addSubview:_webView];
     if (self.internalNavigationController) {
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelAuthorization:)];

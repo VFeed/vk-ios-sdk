@@ -143,7 +143,7 @@ typedef NS_OPTIONS(NSUInteger, VKAuthorizationOptions) {
  
  Typical scenario of using SDK is next:
  
- 1) Register new standalone application on https://vk.com/editapp?act=create
+ 1) Register new standalone application on https://vk.ru/editapp?act=create
  
  2) Setup your application delegate and Info.plist as described on project page: https://github.com/VKCOM/vk-ios-sdk#how-to-set-up-vk-ios-sdk
  
@@ -223,14 +223,14 @@ typedef NS_OPTIONS(NSUInteger, VKAuthorizationOptions) {
 /**
  Initialize SDK with responder for global SDK events with default api version from VK_SDK_API_VERSION
  
- @param appId your application id (if you haven't, you can create standalone application here https://vk.com/editapp?act=create )
+ @param appId your application id (if you haven't, you can create standalone application here https://vk.ru/editapp?act=create )
 */
 + (instancetype)initializeWithAppId:(NSString *)appId;
 
 /**
 Initialize SDK with responder for global SDK events.
  
-@param appId your application id (if you haven't, you can create standalone application here https://vk.com/editapp?act=create )
+@param appId your application id (if you haven't, you can create standalone application here https://vk.ru/editapp?act=create )
 @param version if you want to use latest API version, pass required version here
 */
 + (instancetype)initializeWithAppId:(NSString *)appId
